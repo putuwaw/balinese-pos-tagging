@@ -40,5 +40,6 @@ with col_translate:
     if result:
         st.write("Result")
         annotated_text(result)
-        st.write("Stanford Format")
-        st.code(stanford_formatter(result), language=None)
+        with st.container():
+            st.write("Stanford Format")
+            st.code(stanford_formatter(result), language=None)
