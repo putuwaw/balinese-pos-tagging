@@ -8,6 +8,7 @@ def prepare_input(text: str) -> list:
     words = text.split()
     return [extract_features(words, i) for i in range(len(words))]
 
+# Extract features from every word in the text
 def extract_features(words, index):
     word = words[index]
     features = {
