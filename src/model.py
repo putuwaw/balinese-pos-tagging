@@ -24,7 +24,7 @@ st.dataframe(original_df.head(10))
 st.write("First, we need to adjust the tags of the data to the specified tags.")
 st.write("Modified tags:")
 
-modified_dataset = 'datasets\modified_tags.csv' 
+modified_dataset = 'datasets/modified_tags.csv' 
 modified_df = pd.read_csv(modified_dataset)
 
 st.dataframe(modified_df.head(10))
